@@ -1,0 +1,22 @@
+{
+  "name": "The-Social-Network",
+  "homepage": "https://github.com/anlawande/The-Social-Network",
+  "authors": [
+    "Aniket Lawande <anlawande@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.5.2"
+  }
+}
