@@ -16,10 +16,20 @@ import com.aniketlawande.model.OperationResponse;
 import com.aniketlawande.model.UserProfile;
 import com.aniketlawande.model.UserRequest;
 
+/**
+ * User controller methods
+ * @author Aniket
+ *
+ */
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
 	
+	/**
+	 * Gets the current user from the session
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("/current")
 	public UserProfile getCurrentUser(HttpServletRequest request) {
 		HttpSession session = request.getSession();
@@ -30,6 +40,12 @@ public class UserController {
 		return user;
 	}
 	
+	/**
+	 * Sign in the user using the provided firstname and lastname
+	 * @param request
+	 * @param userreq
+	 * @return
+	 */
 	@RequestMapping(value="/signIn", method=RequestMethod.POST)
 	public UserProfile signInUser(HttpServletRequest request, @RequestBody UserRequest userreq) {
 		HttpSession session = request.getSession();
@@ -50,6 +66,11 @@ public class UserController {
 		return user;
 	}
 	
+	/**
+	 * Gets the user profile for the userId specfied
+	 * @param req
+	 * @return
+	 */
 	@RequestMapping(value="/profile", method=RequestMethod.GET)
 	public UserProfile getProfileUser(HttpServletRequest req) {
 		String userId = req.getParameter("userId");
@@ -62,12 +83,22 @@ public class UserController {
 		return user;
 	}
 	
+	/**
+	 * Sets the user profile for the userId specified
+	 * @param req
+	 * @return
+	 */
 	@RequestMapping(value="/profile", method=RequestMethod.POST)
 	public OperationResponse setProfileUser(@RequestBody UserProfile req) {
 		//Need to do some basic authorization
 		return UserDao.setUserProfile(req);
 	}
 	
+	/**
+	 * Logs out the current user
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("/logout")
 	public OperationResponse logout(HttpServletRequest request) {
 		HttpSession session = request.getSession();

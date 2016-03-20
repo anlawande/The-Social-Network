@@ -12,6 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * This filter implements basic checking of session variables to authenticate the user
+ * @author Aniket
+ *
+ */
 public class AuthFilter implements Filter{
 
 	@Override

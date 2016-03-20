@@ -1,7 +1,5 @@
 snApp.controller("profileCtrl", ["$scope", "userService", function ($scope, userService) {
     $scope.user.profileImg = "public/img/man.jpg";
-    $scope.user.whatIDo = "Student, Web Developer, Software Engineering, Marathon runner";
-    $scope.user.whatILike = "Running, Trance, Gaming and a close knit circle of friends";
     
     $scope.editing = false;
     $scope.isLoading = true;
@@ -12,7 +10,6 @@ snApp.controller("profileCtrl", ["$scope", "userService", function ($scope, user
         else {
             var reqObj = $scope.user;
             userService.setProfileUser(reqObj).then(function (resp) {
-                console.log(resp.data.opCode);
             });
             
             $scope.editing = false;

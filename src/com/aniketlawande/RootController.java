@@ -8,6 +8,11 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * Provides a custom mapping for the "/" route to "/public/index.html"
+ * @author Aniket
+ *
+ */
 @Controller
 public class RootController {
 
