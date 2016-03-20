@@ -1,0 +1,24 @@
+<div class="mainContainer">
+    <div class="profileContainer">
+        <div class="profileHeader">
+            <span class="profileImg"><img ng-src="{{user.profileImg}}" alt=""></span>
+            <span class="profileName">Aniket Lawande</span>
+            <span class="glyphicon {{editing ? 'glyphicon-floppy-disk' : 'glyphicon-pencil'}}" aria-hidden="true" ng-click="edit()"></span>
+            <div class="clearFix"></div>
+            <span class="profileHeadline" ng-if="!editing">Write a short one liner about yourself here</span>
+            <input type="text" class="form-control profileHeadline" id="profileHeadline" ng-if="editing" placeholder="Write a short one liner about yourself here" size="100">
+        </div>
+        <div class="profileBody">
+            <div class="form-group">
+                <label for="WhatIDo">I am...</label>
+                <span class="profileTxt" ng-if="!editing" ng-bind="user.whatIDo"></span>
+                <input type="text" class="form-control" id="WhatIDo" ng-if="editing">
+            </div>
+            <div class="form-group">
+                <label for="WhatILike">I like...</label>
+                <span class="profileTxt" ng-if="!editing" ng-bind="user.whatILike"></span>
+                <input type="text" class="form-control" id="WhatILike" ng-if="editing">
+            </div>
+        </div>
+    </div>
+</div>

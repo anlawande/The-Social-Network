@@ -5,8 +5,9 @@ snApp.controller("landingCtrl", ["$scope", "userService", function($scope, userS
     
     $scope.signInUser = function() {
         userService.signInUser($scope.userFrm.firstname, $scope.userFrm.lastname)
-            .then(function (data) {
-                console.log(data);
+            .then(function (resp) {
+                $scope.user.userId = resp.data.userId;
+                console.log($scope.user.userId);
         });
     };
 }]);

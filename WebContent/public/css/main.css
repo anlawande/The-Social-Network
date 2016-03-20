@@ -47,6 +47,10 @@ body {
     text-align: center;
 }
 
+.clearFix {
+    clear: both;
+}
+
 .loader:before,
 .loader:after,
 .loader {
