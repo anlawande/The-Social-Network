@@ -51,6 +51,17 @@ body {
     clear: both;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: inherit;
+    background-color: rgba(202, 202, 202, 0.2);
+}
+
 .loader:before,
 .loader:after,
 .loader {

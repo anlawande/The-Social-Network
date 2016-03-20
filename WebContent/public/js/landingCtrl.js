@@ -1,4 +1,4 @@
-snApp.controller("landingCtrl", ["$scope", "userService", function($scope, userService){
+snApp.controller("landingCtrl", ["$scope", "userService", "$location", function($scope, userService, $location){
     $scope.userFrm = {};
     $scope.userFrm.firstname = "";
     $scope.userFrm.lastname = "";
@@ -7,7 +7,7 @@ snApp.controller("landingCtrl", ["$scope", "userService", function($scope, userS
         userService.signInUser($scope.userFrm.firstname, $scope.userFrm.lastname)
             .then(function (resp) {
                 $scope.user.userId = resp.data.userId;
-                console.log($scope.user.userId);
+                $location.path("/profile");
         });
     };
 }]);
