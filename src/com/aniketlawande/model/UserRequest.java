@@ -4,8 +4,6 @@ public class UserRequest {
 	public String firstname;
 	public String lastname;
 	
-	public UserRequest() {}
-
 	public String getFirstname() {
 		return firstname;
 	}
