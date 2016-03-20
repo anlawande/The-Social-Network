@@ -33,6 +33,8 @@ public class AuthFilter implements Filter{
 				isAuth = true;
 			else if (request.getRequestURI().equals("/The-Social-Network/"))
 				isAuth = true;
+			else if (request.getRequestURI().contains("/api/user/"))
+				isAuth = true;
 			else
 				isAuth = false;
 		}
