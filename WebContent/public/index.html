@@ -7,11 +7,12 @@
         <script src="public/bower_components/angular-route/angular-route.min.js"></script>
         <script src="public/js/main.js"></script>
         <script src="public/js/userService.js"></script>
-        <script src="public/js/mainCtrl.js"></script>
+        <script src="public/js/rootCtrl.js"></script>
+        <script src="public/js/landingCtrl.js"></script>
         <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="public/css/main.css" type="text/css" />
     </head>
-    <body ng-app="snApp">
+    <body ng-app="snApp" ng-controller="rootCtrl">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,7 +27,9 @@
                 </div>
             </div>
         </nav>
-
-        <div ng-view></div>
+        
+        <div class="loader" ng-if="isLoading">Loading...</div>
+        
+        <div ng-view ng-if="!isLoading"></div>
     </body>
 </html>
