@@ -29,7 +29,11 @@ public class AuthFilter implements Filter{
 		
 		boolean isAuth = true;
 		if (session.getAttribute("userid") == null) {
-			if (!request.getRequestURI().contains("/public/"))
+			if (request.getRequestURI().contains("/public/"))
+				isAuth = true;
+			else if (request.getRequestURI().equals("/The-Social-Network/"))
+				isAuth = true;
+			else
 				isAuth = false;
 		}
 		
