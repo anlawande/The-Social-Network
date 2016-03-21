@@ -29,7 +29,7 @@
                     </button>
                     <a class="navbar-brand" href="#">The Social Network</a>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" ng-hide="{{user.userId === undefined}}">
                     <li><a ng-click="logout()">Logout</a></li>
                 </ul>
             </div>
