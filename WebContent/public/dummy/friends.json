@@ -1,0 +1,34 @@
+[
+    {
+        "userId": "John.Doe",
+        "firstname": "John",
+        "name" : "John Doe",
+        "profileImg": "public/dummy/people-516372_640.jpg",
+        "whatILike": "Sports, Running, Adventuring",
+        "headline": "The journey is more important than the destination"
+    },
+    {
+        "userId": "Jane.Doe",
+        "firstname": "Jane",
+        "name" : "Jane Doe",
+        "profileImg": "public/dummy/person-1207641_640.jpg",
+        "whatILike": "A good book or movie",
+        "headline": "A shy yet determined person, ready to take on whatever comes!"
+    },
+    {
+        "userId": "Santa.Claus",
+        "firstname": "Santa",
+        "name" : "Santa Claus",
+        "profileImg": "public/dummy/santa-claus-1149928_640.jpg",
+        "whatILike": "Rewarding the good, punishing the bad",
+        "headline": "If you've been bad, Santa will have heard of it!"
+    },
+    {
+        "userId": "Rudolph.Rednose",
+        "firstname": "Rudolp",
+        "name" : "Rudolp Rednose",
+        "profileImg": "public/dummy/christmas-1072939_640.jpg",
+        "whatILike": "Berries and leaves",
+        "headline": "Yes I'm that one reindeer you've heard of!"
+    }
+]

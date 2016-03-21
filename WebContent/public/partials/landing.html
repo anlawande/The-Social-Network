@@ -27,5 +27,25 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <div class="friendsCrawl">
+            <div class="crawlHeader">
+                Say hi to...
+            </div>
+            <div class="crawlBody">
+                <div class="friendBox" ng-repeat="friend in dummyFriends">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img ng-src="{{friend.profileImg}}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="friendName" ng-bind="friend.name"></div>
+                            <div class="friendHeadline friendDesc" ng-bind="friend.headline"></div>
+                            <div class="friendWhatILike friendDesc" ng-bind="friend.whatILike"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
