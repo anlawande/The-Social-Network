@@ -2,6 +2,8 @@
 
 This is a small project to demonstrate and practice my web application development skills. Developing features one by one on a simple social networking kind of application. The features list and status can be found below.
 
+![](screen1.png)
+
 ##### Features
 * Sweet look (Done)
 * Create/Edit profile (Done)
