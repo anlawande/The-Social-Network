@@ -5,6 +5,7 @@ This is a small project to demonstrate and practice my web application developme
 ##### Features
 * Sweet look (Done)
 * Create/Edit profile (Done)
+* Neo4j/h2 integration
 * View friend's profile
 * View friends
 * Authentication and Authorization
